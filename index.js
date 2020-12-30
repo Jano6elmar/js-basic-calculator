@@ -29,24 +29,52 @@ let dividir = {
 }
 
 //Tu funcion de suma aqui abajo
+function fsumar(a, b) {
+    return a + b;
+}
 
 
 //Tu funcion de resta aqui abajo
+function frestar(a, b) {
+    return a - b;
+}
 
 
 //Tu funcion de  multiplicar aqui abajo
+function fmultiplicar(a, b) {
+    return a * b;
+}
 
 
 //Tu funcion de dividir aqui abajo
+function fdividir(a, b) {
+    return a / b;
+}
 
 
 
 //Funcion calculate
-window.onload = function(){
+window.onload = function () {
     console.log("Me ejecute al cargar la pagina")
     //Ejecuta tu funcion "calculate" dentro de este bloque de codigo
+
+    calculate(fmultiplicar,"multiplicar");
+}
+function calculate(func, obj) {
+    //Tu logica va aqui 
+    switch (func) {
+        case fsumar:
+            return fsumar(sumar["a"], sumar["b"]);
+        case frestar:
+            return frestar(restar["a"], restar["b"]);
+        case fmultiplicar:
+            return fmultiplicar(multiplicar["a"] ,multiplicar["b"]);
+        case fdividir:
+            return fdividir(dividir["a"], dividir["b"]);
+        default:  
+        console.log("invalido");       
+    }
+
 }
 
-function calculate(func, obj){
-    //Tu logica va aqui 
-}
+
