@@ -55,26 +55,14 @@ function fdividir(a, b) {
 
 //Funcion calculate
 window.onload = function () {
-    console.log("Me ejecute al cargar la pagina")
+    console.log("Me ejecute al cargar la pagina");
     //Ejecuta tu funcion "calculate" dentro de este bloque de codigo
 
-    calculate(fmultiplicar,"multiplicar");
+    console.log(calculate(fmultiplicar, dividir));
 }
 function calculate(func, obj) {
     //Tu logica va aqui 
-    switch (func) {
-        case fsumar:
-            return fsumar(sumar["a"], sumar["b"]);
-        case frestar:
-            return frestar(restar["a"], restar["b"]);
-        case fmultiplicar:
-            return fmultiplicar(multiplicar["a"] ,multiplicar["b"]);
-        case fdividir:
-            return fdividir(dividir["a"], dividir["b"]);
-        default:  
-        console.log("invalido");       
-    }
-
+    return func(obj.a, obj.b);
 }
 
 
