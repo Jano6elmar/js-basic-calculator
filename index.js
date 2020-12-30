@@ -66,3 +66,5 @@ function calculate(func, obj) {
 }
 
 
+
+
